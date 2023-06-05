@@ -1,118 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:weightSum="10"
+    android:layout_height="match_parent">
 
-    tools:context="drawable.demo1.MainActivity"
-    xmlns:tools="http://schemas.android.com/tools">
 
     <LinearLayout
-        android:layout_width="0dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_weight="2"
-        android:weightSum="2">
+        android:orientation="horizontal"
+        android:weightSum="10"
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="#1500ff"
-            android:gravity="center"
-            android:text="1"
-            android:textColor="#EA80FC"
-            android:textSize="50sp"
-            tools:ignore="NestedWeights" />
+        xmlns:tools="http://schemas.android.com/tools">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="#d1b4d0"
-            android:gravity="center"
-            android:text="2"
-            android:textColor="#33691E"
-            android:textSize="50sp" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_weight="3"
-        android:weightSum="3">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:weightSum="2">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="#00ff88"
-            android:gravity="center"
-            android:text="3"
-            android:textColor="#D500F9"
-            android:textSize="50sp"
-            tools:ignore="NestedWeights" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#1500ff"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#EA80FC"
+                android:textSize="50sp"
+                tools:ignore="NestedWeights" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="#ff7300"
-            android:gravity="center"
-            android:text="4"
-            android:textColor="#004D40"
-            android:textSize="50sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#d1b4d0"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="#33691E"
+                android:textSize="50sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:weightSum="3">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="#387ecf"
-            android:gravity="center"
-            android:text="5"
-            android:textColor="#1A237E"
-            android:textSize="50sp" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_weight="4"
-        android:weightSum="5">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#00ff88"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="#D500F9"
+                android:textSize="50sp"
+                tools:ignore="NestedWeights" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#ff7300"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="#004D40"
+                android:textSize="50sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#387ecf"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="#1A237E"
+                android:textSize="50sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
             android:layout_weight="4"
-            android:gravity="center"
-            android:textSize="50sp"
-            android:textColor="#ffffff"
-            android:background="#1c661c"
-            android:text="6"
-            tools:ignore="NestedWeights" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:textSize="50sp"
-            android:textColor="#000000"
-            android:background="#6d4fa1"
-            android:text="7" />
+            android:weightSum="5">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:textSize="50sp"
+                android:textColor="#ffffff"
+                android:background="#1c661c"
+                android:text="6"
+                tools:ignore="NestedWeights" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="50sp"
+                android:textColor="#000000"
+                android:background="#6d4fa1"
+                android:text="7" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="#C597C5"
+            android:gravity="top"
+            android:text="NODEJS"
+            android:textColor="#6D4C41"
+            android:textSize="50sp"
+
+            />
     </LinearLayout>
 
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1.5"
-        android:background="#C597C5"
-        android:gravity="top"
-        android:text="NODEJS"
-        android:textColor="#6D4C41"
-        android:textSize="50sp"
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thoát"
+        android:layout_alignParentBottom="true"/>
 
-        />
-</LinearLayout>
+</RelativeLayout>
+
+
