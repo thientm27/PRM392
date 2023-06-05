@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, LinearActivity2.class);
+                Intent intent = new Intent(MainActivity.this, Calculator.class);
                 startActivity(intent);
             }
         });
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Facebook.class);
+                Intent intent = new Intent(MainActivity.this, SignUp.class);
                 startActivity(intent);
             }
         });
