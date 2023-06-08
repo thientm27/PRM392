@@ -31,6 +31,10 @@
             android:name=".SportsPlayer"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".FuirdListView"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>
