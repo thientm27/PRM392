@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$BundleData"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/std_Infor"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="@+id/std_Infor"
+        app:layout_constraintTop_toBottomOf="@+id/nganh"
+        app:layout_constraintVertical_bias="0.144" />
+
+    <Button
+        android:id="@+id/std_Infor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Student Infor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/monhoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Mon Hoc"
+        app:layout_constraintEnd_toEndOf="@+id/std_Infor"
+        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintStart_toStartOf="@+id/std_Infor"
+        app:layout_constraintTop_toBottomOf="@+id/std_Infor" />
+
+    <Button
+        android:id="@+id/hocky"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Hoc Ky"
+        app:layout_constraintEnd_toEndOf="@+id/monhoc"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="@+id/monhoc"
+        app:layout_constraintTop_toBottomOf="@+id/monhoc" />
+
+    <Button
+        android:id="@+id/coso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Campus"
+        app:layout_constraintEnd_toEndOf="@+id/hocky"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/hocky"
+        app:layout_constraintTop_toBottomOf="@+id/hocky" />
+
+    <Button
+        android:id="@+id/nganh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Nganh Hoc"
+        app:layout_constraintEnd_toEndOf="@+id/coso"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/coso"
+        app:layout_constraintTop_toBottomOf="@+id/coso" />
+
+    <TextView
+        android:id="@+id/txt_nganhhoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/txt_coso"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_coso"
+        app:layout_constraintTop_toBottomOf="@+id/txt_coso" />
+
+    <TextView
+        android:id="@+id/txt_coso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/txt_hocky"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_hocky"
+        app:layout_constraintTop_toBottomOf="@+id/txt_hocky" />
+
+    <TextView
+        android:id="@+id/txt_monhoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tvDisplay"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvDisplay"
+        app:layout_constraintTop_toBottomOf="@+id/tvDisplay" />
+
+    <TextView
+        android:id="@+id/txt_hocky"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/txt_monhoc"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_monhoc"
+        app:layout_constraintTop_toBottomOf="@+id/txt_monhoc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
