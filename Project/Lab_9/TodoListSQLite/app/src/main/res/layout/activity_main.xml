@@ -11,11 +11,13 @@
             android:layout_height="60dp" app:srcCompat="@drawable/ic_add" android:id="@+id/icAdd"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginEnd="24dp" android:layout_marginBottom="24dp"/>
+
     <ListView
-            android:id="@+id/todoListView"
-            android:layout_width="380dp"
-            android:layout_height="match_parent"
-            android:layout_marginVertical="30dp"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+        android:id="@+id/todoListView"
+        android:layout_width="376dp"
+        android:layout_height="612dp"
+        android:layout_marginVertical="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

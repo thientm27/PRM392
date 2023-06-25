@@ -46,7 +46,7 @@ public class TodoAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View view, ViewGroup viewGroup) {
+    public View getView(int position, View view, ViewGroup viewGroup) { // set up a row
         ViewHolder holder;
         if (view == null) {
             holder = new ViewHolder();

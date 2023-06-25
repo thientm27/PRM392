@@ -50,20 +50,20 @@ public class MainActivity extends AppCompatActivity {
 
         icAdd.setOnClickListener(v -> {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setTitle("Add Todo");
-            EditText editText = new EditText(this);
-            builder.setView(editText);
-            builder.setPositiveButton("Add", (dialog, which) -> {
-                String newTodoName = editText.getText().toString();
+            builder.setTitle("Add Todo"); // add title to popup
+            EditText editText = new EditText(this); // Create editext
+            builder.setView(editText); // add edit text to popup
+            builder.setPositiveButton("Add", (dialog, which) -> { // Set button Add
+                String newTodoName = editText.getText().toString(); // get name
                 if (newTodoName.trim().isEmpty()) {
-                    Toast.makeText(this, "Todo name cannot be empty", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Todo name cannot be empty", Toast.LENGTH_SHORT).show(); // error message
                 } else {
-                    db.queryData("INSERT INTO ToDoList VALUES(null, '" + newTodoName + "')");
-                    loadTodos();
+                    db.queryData("INSERT INTO ToDoList VALUES(null, '" + newTodoName + "')"); // add to database
+                    loadTodos(); // load database to show
                 }
             });
-            builder.setNegativeButton("Cancel", (dialog, which) -> dialog.dismiss());
-            builder.show();
+            builder.setNegativeButton("Cancel", (dialog, which) -> dialog.dismiss()); // cancel button
+            builder.show(); // show
         });
     }
 
